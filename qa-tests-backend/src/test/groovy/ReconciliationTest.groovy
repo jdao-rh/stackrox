@@ -136,7 +136,7 @@ class ReconciliationTest extends BaseSpecification {
             busyboxDeployment = new Deployment()
                     .setNamespace(ns)
                     .setName("testing123")
-                    .setImage("quay.io/rhacs-eng/qa:busybox")
+                    .setImage("quay.io/rhacs-eng/qa-multi-arch:busybox-1-33-1")
                     .addPort(22)
                     .addLabel("app", "testing123")
                     .setCommand(["sleep", "600"])
